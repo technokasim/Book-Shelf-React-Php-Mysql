@@ -20,10 +20,7 @@ database name should be book_library
    npm start 
 ```
 
-```run server
-    cd server
-    npm run dev
-```
+
 
     
 ## Deployment
