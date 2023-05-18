@@ -1,0 +1,291 @@
+.header {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    filter: brightness(200%);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.welcome {
+    color: #FFD700;
+}
+
+
+.web-portal {
+    color: #FFD700;
+}
+
+/* Add a shadow to the heading */
+h1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+/* Animate the highlight text */
+
+.highlight {
+    animation: color-animation 2s ease-in-out infinite;
+    font-weight: bold;
+}
+
+.highlight {
+    --color-1: 	#accbff;
+    --color-2: #92bbff;
+    --color-3: #78aaff;
+    --color-4: #649eff;
+    --color-5: #4188ff;
+    --color-6: #649eff;
+    --color-7: #4188ff;
+    --color-8: #4188ff;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    6.5% {
+        color: var(--color-1)
+    }
+
+    6.5% {
+        color: var(--color-2)
+    }
+
+    13% {
+        color: var(--color-2)
+    }
+
+    13% {
+        color: var(--color-3)
+    }
+
+    19.5% {
+        color: var(--color-3)
+    }
+
+    19.5% {
+        color: var(--color-4)
+    }
+
+    26% {
+        color: var(--color-4)
+    }
+
+    26% {
+        color: var(--color-5)
+    }
+
+    32.5% {
+        color: var(--color-5)
+    }
+
+    32.5% {
+        color: var(--color-6)
+    }
+
+    39% {
+        color: var(--color-6)
+    }
+
+    39% {
+        color: var(--color-7)
+    }
+
+    44.5% {
+        color: var(--color-7)
+    }
+
+    44.5% {
+        color: var(--color-8)
+    }
+
+    50% {
+        color: var(--color-8)
+    }
+
+    50% {
+        color: var(--color-9)
+    }
+
+    50% {
+        color: var(--color-9)
+    }
+
+    50% {
+        color: var(--color-9)
+    }
+
+    50% {
+        color: var(--color-9)
+    }
+
+    50% {
+        color: var(--color-8)
+    }
+
+    55.5% {
+        color: var(--color-8)
+    }
+
+    55.5% {
+        color: var(--color-7)
+    }
+
+    62% {
+        color: var(--color-7)
+    }
+
+    62% {
+        color: var(--color-6)
+    }
+
+    68.5% {
+        color: var(--color-6)
+    }
+
+    68.5% {
+        color: var(--color-5)
+    }
+
+    75% {
+        color: var(--color-5)
+    }
+
+    75% {
+        color: var(--color-4)
+    }
+
+    81.5% {
+        color: var(--color-4)
+    }
+
+    81.5% {
+        color: var(--color-3)
+    }
+
+    88% {
+        color: var(--color-3)
+    }
+
+    88% {
+        color: var(--color-2)
+    }
+
+    94.5% {
+        color: var(--color-2)
+    }
+
+    94.5% {
+        color: var(--color-1)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+.mainbody::before {
+    content: "";
+    background-image: url('Images/home.jpg');
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.584;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    border: 2px white;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    background-color: #000000;
+    filter: brightness(109%);
+}
+
+.section-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.section-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.section-button:hover {
+    transform: scale(1.05);
+    background-color: #0056b3;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 50px;
+}
+
+.footer-text {
+    color: gray;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+
+    .section {
+        width: 100%;
+    }
+}
